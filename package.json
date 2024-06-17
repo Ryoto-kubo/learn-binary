@@ -13,5 +13,8 @@
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.5.29",
     "chokidar": "^3.6.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
