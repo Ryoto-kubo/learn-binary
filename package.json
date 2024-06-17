@@ -1,0 +1,17 @@
+{
+  "name": "learn-binary",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx spack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.5.29",
+    "chokidar": "^3.6.0"
+  }
+}
