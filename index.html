@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>画像処理の例</title>
+  </head>
+  <body>
+    <input type="file" id="fileInput" accept="image/*" />
+
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const canvas = document.getElementById("canvas");
+
+      fileInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        console.log(file, "file");
+        const form = new FormData();
+        form.append("file", file);
+
+        fetch("http://localhost:3000/upload", {
+          method: "POST",
+          body: form,
+        }).then((response) => {
+          console.log(response, "response");
+        });
+      });
+    </script>
+  </body>
+</html>

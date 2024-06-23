@@ -9,12 +9,12 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
-    "@swc/cli": "^0.3.12",
-    "@swc/core": "^1.5.29",
-    "chokidar": "^3.6.0"
-  },
   "dependencies": {
-    "express": "^4.19.2"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8"
   }
 }
